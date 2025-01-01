@@ -3,7 +3,6 @@
 //добавление элемента в очередь
 void queue_priority::add(user user_p, int priority_p)
 {
-
 	wait.push_back(user_p);
 	
 	prioritys.push_back(priority_p);
