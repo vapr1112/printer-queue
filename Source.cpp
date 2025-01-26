@@ -68,19 +68,19 @@ int main()
 
 	cout << "\informatoin\n";
 
-	printer.print();
+	printer.print_inf();
 
 	cout << "\nprinting...\n";
 
-	printer.print_priority();
+	printer.print();
 
 	cout << "\n";
 
-	printer.print_priority();
+	printer.print();
 
 	cout << "\n";
 
-	printer.print_priority();
+	printer.print();
 
 	return 0;
 }

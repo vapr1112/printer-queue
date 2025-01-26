@@ -14,15 +14,15 @@ private:
 
 public:
 
-	user() : name{ string()}, priority{1}, work{string()} {}
+	user()noexcept : name{ string()}, priority{1}, work{string()} {}
 
-	user(string name_p, size_t  priority_p, string work_p) : name{ name_p }, priority{ priority_p }, work {work_p}{}
+	user(string name_p, size_t  priority_p, string work_p)noexcept : name{ name_p }, priority{ priority_p }, work {work_p}{}
 
-	void set_name(string name_p){name = name_p;}
+	void set_name(string name_p)noexcept {name = name_p;}
 
-	void set_priority(const size_t priority_p){priority = priority_p;}
+	void set_priority(const size_t priority_p)noexcept {priority = priority_p;}
 
-	void set_work(string work_p){	work = work_p;}
+	void set_work(string work_p)noexcept {	work = work_p;}
 
 	string get_name() const noexcept{return name;}
 

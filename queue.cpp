@@ -1,7 +1,7 @@
 #include "queue.h"
 
 //добавление
-void queue::add(user user_p)
+void queue::add(user user_p)noexcept
 {
 	queue_size = wait.size();
 	wait.push_back(user_p);

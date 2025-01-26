@@ -1,7 +1,7 @@
 #include "queue_priority.h"
 
 //добавление элемента в очередь
-void queue_priority::add(user user_p, int priority_p)
+void queue_priority::add(user user_p, int priority_p)noexcept
 {
 	wait.push_back(user_p);
 	

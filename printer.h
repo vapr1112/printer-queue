@@ -5,15 +5,15 @@
 class printer
 {
 private:
-	queue_priority queue_priority;
-	queue queue;
+	queue_priority printing;
+	queue information;
 public:
-	//выводит информацию о элемнтах 
-	void print() const noexcept { queue.print_queue(); }
+	//выводит информацию
+	void print_inf() const noexcept { information.print_queue(); }
 
-	void add(user user_p, int priority_p);
+	void add(user user_p, int priority_p)noexcept;
 
-	//показывает элементы по их приоритету
-	void print_priority() noexcept { queue_priority.print(); }
+	//печатает...
+	void print() noexcept { printing.print(); }
 };
 

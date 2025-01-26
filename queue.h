@@ -11,7 +11,7 @@ private:
 public:
 
 	//добавление элемента
-	void add(user user_p);
+	void add(user user_p)noexcept;
 	//очистка
 	void clear()noexcept {queue_size = 0;}
 	//размер очереди

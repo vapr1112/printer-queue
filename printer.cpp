@@ -1,8 +1,8 @@
 #include "printer.h"
 
-void printer::add(user user_p, int priority_p)
+void printer::add(user user_p, int priority_p)noexcept
 {
-	queue.add(user_p);
+	information.add(user_p);
 
-	queue_priority.add(user_p, priority_p);
+	printing.add(user_p, priority_p);
 }
